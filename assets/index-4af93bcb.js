@@ -1,0 +1,25 @@
+import{d as T,i,a as t,m as D,F as M,e as U,f as j,g as R,t as o,h as E,j as F,u as O,S as s,T as m}from"./index-00bf0c33.js";import{A as e}from"./index-31b5d2c6.js";import{T as k,D as u,a as v,C as B}from"./code-6666454f.js";import{T as c,C as h}from"./index-345cd19e.js";import{T as A}from"./index-0092c168.js";import{P as f}from"./index-e4583d54.js";import{p as y}from"./columns-26981c48.js";import{h as I}from"./hljs-74a5c6d1.js";import"./_commonjsHelpers-725317a4.js";const x=o('<div class="cm-avatar-list-item">'),N=o("<div>");function b(r){const S=()=>F(r,"cm-avatar-list",{[`cm-avatar-list-${r.size}`]:r.size}),l=()=>r.max??Number.MAX_VALUE,$=T(()=>r.children),d=()=>$.toArray(),p=()=>d().length;return(()=>{const n=N();return i(n,t(M,{get each(){return d()},children:(a,w)=>{if(a.asProps=!1,w()<l())return(()=>{const g=x();return i(g,t(k,{get align(){return r.align||"top"},get content(){return a.title},get children(){return t(e,D(a,{get size(){return r.size}}))}})),g})()}}),null),i(n,t(j,{get when(){return p()>l()},get children(){const a=x();return i(a,t(e,{get size(){return r.size},get style(){return r.excessStyle},get children(){return["+",U(()=>p()-l())]}})),a}}),null),R(a=>E(n,S(),a)),n})()}const V=`import img1 from './1.png';
+import img2 from './2.png';
+import img3 from './3.png';
+import img4 from './4.png';
+
+<Space dir="h" align="center">
+    <AvatarList>
+        <Avatar asProps title='Avatar 1' src={img1}/>
+        <Avatar asProps title='Avatar 2' src={img2}/>
+        <Avatar asProps title='Avatar 3' src={img3}/>
+        <Avatar asProps title='Avatar 4' src={img4}/>
+    </AvatarList>
+</Space>`,X=`import img1 from './1.png';
+import img2 from './2.png';
+import img3 from './3.png';
+import img4 from './4.png';
+
+<Space dir="h" align="center">
+    <AvatarList max={3} excessStyle={{'background-color': 'rgb(253, 227, 207)', color: 'rgb(245, 106, 0)'}}>
+        <Avatar asProps title='Avatar 1' src={img1}/>
+        <Avatar asProps title='Avatar 2' src={img2}/>
+        <Avatar asProps title='Avatar 3' src={img3}/>
+        <Avatar asProps title='Avatar 4' src={img4}/>
+    </AvatarList>
+</Space>`,Y=[{name:"classList",desc:"Custom Class",type:"Object",default:""},{name:"class",desc:"Custom Class",type:"string",default:""},{name:"style",desc:"Custom style",type:"Object",default:""},{name:"size",desc:"Avatar size,small|large|number",type:"number|string",default:""},{name:"max",desc:"Maximum display",type:"number",default:"Number.MAX_VALUE"},{name:"excessStyle",desc:"Excellent display style",type:"Object",default:""}],q=[{name:"name",desc:"Data item name",type:"string",default:""},{name:"src/icon",desc:"Avatar picture address/Avatar icon",type:"string",default:""}],G=[{id:"avatar_base",text:"Avatar size"},{id:"avatar_max",text:"Maximum display"},{id:"comp_api",text:"API"},{id:"comp_props",text:"Avatar attribute"}],P={avatar_max:X,avatar_base:V},_=""+new URL("1-4cf76965.png",import.meta.url).href,L=""+new URL("2-36476a8a.png",import.meta.url).href,C=""+new URL("3-45c00e7d.png",import.meta.url).href,z=""+new URL("4-14cb6046.png",import.meta.url).href,H=o('<div class="sys-ctx-main-left">');function st(){return[(()=>{const r=H();return O(I,r,()=>""),i(r,t(s,{dir:"v",size:32,get children(){return[t(c,{heading:2,children:"AvatarList 头像列表"}),t(s,{id:"avatar_base",dir:"v",get children(){return t(h,{bordered:!0,get children(){return[t(s,{dir:"h",align:"center",get children(){return t(b,{get children(){return[t(e,{asProps:!0,title:"Avatar 1",src:_}),t(e,{asProps:!0,title:"Avatar 2",src:L}),t(e,{asProps:!0,title:"Avatar 3",src:C}),t(e,{asProps:!0,title:"Avatar 4",src:z})]}})}}),t(u,{align:"left",get children(){return t(m,{type:"primary",children:"Basic usage"})}}),t(f,{type:"secondary",spacing:"extended",children:"Basic usage"}),t(v,{get data(){return P.avatar_base}})]}})}}),t(s,{id:"avatar_max",dir:"v",get children(){return t(h,{bordered:!0,get children(){return[t(s,{dir:"h",align:"center",get children(){return t(b,{max:3,excessStyle:{"background-color":"rgb(253, 227, 207)",color:"rgb(245, 106, 0)"},get children(){return[t(e,{asProps:!0,title:"Avatar 1",src:_}),t(e,{asProps:!0,title:"Avatar 2",src:L}),t(e,{asProps:!0,title:"Avatar 3",src:C}),t(e,{asProps:!0,title:"Avatar 4",src:z})]}})}}),t(u,{align:"left",get children(){return t(m,{type:"primary",children:"Maximum display"})}}),t(f,{type:"secondary",spacing:"extended",get children(){return["Setting attribute ",t(m,{code:!0,children:"max"})," You can specify a maximum avatar, which will be displayed after exceeding."]}}),t(v,{get data(){return P.avatar_max}})]}})}}),t(s,{dir:"v",size:24,id:"comp_api",get children(){return[t(c,{type:"primary",heading:3,children:"API"}),t(s,{id:"comp_props",dir:"v",get children(){return[t(c,{type:"primary",heading:4,children:"AvatarList Props"}),t(A,{columns:y,data:Y,border:!0,size:"small"})]}}),t(s,{id:"data_props",dir:"v",get children(){return[t(c,{type:"primary",heading:4,children:"data Props"}),t(A,{columns:y,data:q,border:!0,size:"small"})]}})]}})]}})),r})(),t(B,{data:G})]}export{st as default};
